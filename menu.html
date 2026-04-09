@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>必點菜餚 | 蒸武館 </title>
+    
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Template CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/magnific-popup.min.css" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/icons-main.css" rel="stylesheet">
+    <link href="css/icons-helper.css" rel="stylesheet">
+   
+    <!-- RS5.0 Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+     
+    <!-- RS5.0 Layers and Navigation Styles -->
+    <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">	
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- Font Favicon -->
+    <link rel="shortcut icon" href="assets/favicon.png">
+
+    <!-- Icofont -->
+    <link href="https://cdn.jsdelivr.net/npm/icofont@1.0.0/dist/icofont.min.css" rel="stylesheet">
+   
+</head>
+
+<body>
+
+    <script>
+        // Utility to show warning message
+        function showWarning() 
+        {
+          const warning = document.getElementById('warning');
+          warning.style.display = 'block';
+          setTimeout(() => {
+            warning.style.display = 'none';
+          }, 2000); // Show for 2 seconds
+        }
+    
+        // Disable right-click
+        document.addEventListener('contextmenu', function (e) 
+        {
+          e.preventDefault();
+          showWarning();
+        });
+    
+        // Disable copy, cut, paste
+        ['copy', 'cut', 'paste'].forEach(evt => {
+          document.addEventListener(evt, function (e) {
+            e.preventDefault();
+            showWarning();
+          });
+        });
+    
+        // Disable Ctrl+C, Ctrl+X, Ctrl+A
+        document.addEventListener('keydown', function (e) {
+          if ((e.ctrlKey || e.metaKey) && ['c', 'x', 'a'].includes(e.key.toLowerCase())) {
+            e.preventDefault();
+            showWarning();
+          }
+        });
+    </script>
+
+    <div id="warning" class="warning warning-wpcp">
+        <span> ALERT:</span> Content is protected!
+    </div>
+
+
+    
+    <!--begin header -->
+    <header class="header">
+
+        <!--begin nav -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            
+            <!--begin container -->
+            <div class="container">
+        
+                <!--begin navbar -->
+                <div class="navbar-header">
+                    <button data-target="#navbar-collapse-02" data-toggle="collapse" class="navbar-toggle" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                                                                        
+                    <a href="index.html" class="navbar-brand brand scrool"><img src="assets/steam-calligraphy.png" alt="logo" class="width-80"></a>
+                </div>
+                        
+                <div id="navbar-collapse-02" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">			      
+                        <li><a href="homepage.html">主頁</a></li>
+                        <li><a href="about.html">關於我們 </a></li>
+                        <li class="selected"><a href="menu.html">必點菜餚</a></li>
+                        <li><a href="reservations.html">預訂餐桌</a></li>
+                        <li><a href="gallery.html">最新照片</a></li>
+                        <li><a href="contact.html">聯絡我們</a></li>
+                        
+                        <li class="social">
+                            <a href="https://www.instagram.com/steamdelicious20/" class="first">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="social">
+                            <a href="https://www.facebook.com/p/%E8%92%B8%E6%AD%A6%E9%A4%A8-STEAM-Delicious-100078657407465/">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        
+                       
+                    </ul>
+                </div>
+                <!--end navbar -->
+                                    
+            </div>
+    		<!--end container -->
+            
+        </nav>
+    	<!--end nav -->
+        
+    </header>
+    <!--end header -->
+        
+    
+    
+    <section id="menu-hero-section" class="menu-hero-section">
+        
+        <!--begin image-overlay -->
+        <div class="image-overlay"></div>
+        <!--end image-overlay -->
+            
+        <!--begin container-->
+        <div class="container image-section-inside-2">
+
+            <!--begin row-->
+            <div class="row">
+            
+                <!--begin col-md-10-->
+                <div class="col-md-10 col-md-offset-1 text-center">
+                                    
+                    <div class="text-center animated fadeInDown">
+                        <img src="images/menu-icon.png">                   
+                    </div>
+
+                    <ol class="breadcrumb justify-content-center mb-0 animated fadeInUp">
+                        <li class="breadcrumb-item">
+                            <a href="homepage.html" id="home">主頁</a>
+                        </li>
+
+                        <li class="breadcrumb-item" aria-current="page">必點菜餚</li>
+                    </ol>
+                
+                   
+                </div>
+           
+                <!--end col-md-10-->
+                
+                
+            </div>
+            <!--end row-->
+            
+        </div>
+        <!--end container-->    
+            
+        
+        
+    </section>
+    
+
+    <!--begin menu-tabs-->
+    <section id="menu-tabs" class="menu-tabs py-20">
+        
+        <!--begin container-->
+        <div class="container" >
+
+            <!--begin row-->
+            <div class="row margin-bottom-40">
+                        
+                <!--begin col-md-12-->
+                <div class="col-md-12 text-center wow animated fadeInDown" data-wow-delay="1.25s">
+                   <div class="text-center">
+                     <span class="comic-text">熱門推薦</span>    
+                   </div>
+
+                </div>
+                <!--end col-md-12-->
+
+            </div>
+            <!--end row-->
+
+            <!--begin row-->
+            <div class="row">
+
+                <!-- /tabs_menu-->
+                <div class="tabs_menu" id="tabs_menu">
+                    <ul class="nav nav-pills wow animated fadeIn"  role="tablist" data-wow-delay="1.5s">
+                        <li class="nav-item" role="presentation">
+                            <button id="tab-A" href="#pane-A" class="nav-link active"  data-bs-toggle="tab" role="tab" aria-selected="true">經典早餐</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button id="tab-B" href="#pane-B" class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false" tabindex="-1">茶室主食</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button id="tab-C" href="#pane-C" class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false" tabindex="-1">特色家常菜 </button>
+                        </li>
+                    </ul>
+
+                    <!-- /tabs-content-->
+                    <div class="tabs-content add_bottom_25 wow animated fadeInUp" role="tablist" data-wow-delay="2.1s">
+                        
+                        <!-- /tab-->
+                        <div id="pane-A" class="card tab-pane fades show active" role="tabpanel" aria-labelledby="tab-A">
+                            <div class="card-header" role="tab" id="heading-A">
+                                <h5 class="menu-accordion">
+                                    <a class="collapsed" data-bs-toggle="collapse" href="#breakfast" aria-expanded="true" aria-controls="breakfast">
+                                        經典早餐 
+                                    </a>
+                                   
+                                </h5>
+
+                            </div>
+
+                            <div id="breakfast" class="collapse transition-all" role="tabpanel" aria-labelledby="heading-A">
+                                <div class="card-body">
+                                    <div class="row magnific-gallery add_top_30">
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="img/menu_items/large/1.jpg" title="李小龍冰" data-effect="mfp-zoom-in">
+                                                        <img src="img/menu_items/1.jpg" data-src="img/menu_items/1.jpg" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>李小龍冰</h3><em>RM 3.00</em>
+                                                </div>
+                                                <p>香醇咖啡混合濃滑奶茶</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="menu/kaya-toast.png" title="咖椰多士" data-effect="mfp-zoom-in">
+                                                        <img src="menu/kaya-toast.png" data-src="menu/kaya-toast.png" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>咖椰多士</h3><em>RM 3.50</em>
+                                                </div>
+                                                <p>酥脆口感，香甜咖椰與冰鎮牛油</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="menu/ipoh-white-coffee.png" title="陳真冰" data-effect="mfp-zoom-in">
+                                                        <img src="menu/ipoh-white-coffee.png" data-src="menu/ipoh-white-coffee.png" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>陳真冰</h3><em>RM 3.40</em>
+                                                </div>
+                                                <p>醇厚香滑的怡保白咖啡</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="menu/pineapple-bun.png" title="冰火菠蘿油" data-effect="mfp-zoom-in">
+                                                        <img src="menu/pineapple-bun.png" data-src="menu/pineapple-bun.png" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>冰火菠蘿油</h3><em>RM 4.00</em>
+                                                </div>
+                                                <p>酥脆菠蘿包與冰冷牛油</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="menu/teh-ice.png" title="凍奶茶" data-effect="mfp-zoom-in">
+                                                        <img src="menu/teh-ice.png" data-src="menu/teh-ice.png" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>凍奶茶</h3><em>RM 3.50</em>
+                                                </div>
+                                                <p>濃郁絲滑的冰涼奶茶</p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="menu/chicken-ross.png" title="雞絲肉乾面包" data-effect="mfp-zoom-in">
+                                                        <img src="menu/chicken-ross.png" data-src="menu/chicken-ross.png" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>雞絲肉乾面包</h3><em>RM 8.50</em>
+                                                </div>
+                                                <p>鬆軟面包内夾碳烤肉乾與鮮香雞絲</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="menu/neslo-ice.png" title="虎咬獅" data-effect="mfp-zoom-in">
+                                                        <img src="menu/neslo-ice.png" data-src="menu/neslo-ice.png" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>虎咬獅</h3><em>RM 5.00</em>
+                                                </div>
+                                                <p>南洋咖啡與美祿的苦甜交織</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="menu/crossiant.png" title="火腿芝士可頌" data-effect="mfp-zoom-in">
+                                                        <img src="menu/crossiant.png" data-src="menu/crossiant.png" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>火腿芝士牛角包</h3><em>RM 7.50</em>
+                                                </div>
+                                                <p>酥香可頌内夾鹹香火腿與濃郁芝士</p>
+                                            </div>
+                                        </div>
+
+                                        
+                                       
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- /tab-->
+                        <div id="pane-B" class="card tab-pane fades" role="tabpanel" aria-labelledby="tab-B">
+                            <div class="card-header" role="tab" id="heading-B">
+                                <h5 class="menu-accordion">
+                                    <a class="collapsed" data-bs-toggle="collapse" href="#collapse-B" aria-expanded="true" aria-controls="collapse-B">
+                                        茶室主食
+                                    </a>
+                                </h5>
+                            </div>
+
+                            <div id="collapse-B" class="collapse transition-all" role="tabpanel" aria-labelledby="heading-B">
+                                <div class="card-body">
+                                    <div class="row magnific-gallery add_top_30">
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="img/menu_items/large/3.jpg" title="Soft shell crab" data-effect="mfp-zoom-in">
+                                                        <img src="img/menu_items/3.jpg" data-src="img/menu_items/3.jpg" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>炒貴刁</h3><em>RM 9.50</em>
+                                                </div>
+                                                <p>鍋氣十足, 味道鹹甜中帶辣</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="img/menu_items/large/4.jpg" title="Soft shell crab" data-effect="mfp-zoom-in">
+                                                        <img src="img/menu_items/4.jpg" data-src="img/menu_items/4.jpg" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>咖哩麵</h3><em>RM 11.50</em>
+                                                </div>
+                                                <p>濃郁香辣的椰香搭配豐富的配料</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="img/menu_items/large/1.jpg" title="Soft shell crab" data-effect="mfp-zoom-in">
+                                                        <img src="img/menu_items/1.jpg" data-src="img/menu_items/1.jpg" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>李小龍冰</h3><em>RM 3.50</em>
+                                                </div>
+                                                <p>Chicken, Potato, Salad</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="img/menu_items/large/2.jpg" title="Soft shell crab" data-effect="mfp-zoom-in">
+                                                        <img src="img/menu_items/2.jpg" data-src="img/menu_items/2.jpg" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>李小龍冰</h3><em>RM 3.50</em>
+                                                </div>
+                                                <p>Chicken, Potato, Salad</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="img/menu_items/large/2.jpg" title="Soft shell crab" data-effect="mfp-zoom-in">
+                                                        <img src="img/menu_items/2.jpg" data-src="img/menu_items/2.jpg" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>烤麵包</h3><em>RM 3.50</em>
+                                                </div>
+                                                <p>Chicken, Potato, Salad</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="img/menu_items/large/2.jpg" title="Soft shell crab" data-effect="mfp-zoom-in">
+                                                        <img src="img/menu_items/2.jpg" data-src="img/menu_items/2.jpg" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>烤麵包</h3><em>RM 3.50</em>
+                                                </div>
+                                                <p>Chicken, Potato, Salad</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="img/menu_items/large/3.jpg" title="Soft shell crab" data-effect="mfp-zoom-in">
+                                                        <img src="img/menu_items/3.jpg" data-src="img/menu_items/3.jpg" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>李小龍冰</h3><em>RM 3.50</em>
+                                                </div>
+                                                <p>Chicken, Potato, Salad</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- /tab-->
+                        <div id="pane-C" class="card tab-pane fades" role="tabpanel" aria-labelledby="tab-C">
+                            <div class="card-header" role="tab" id="heading-C">
+                                <h5 class="menu-accordion">
+                                    <a class="collapsed" data-bs-toggle="collapse" href="#collapse-C" aria-expanded="true" aria-controls="collapse-C">
+                                        特色家常菜 
+                                    </a>
+                                </h5>
+                            </div>
+
+                            <div id="collapse-C" class="collapse transition-all" role="tabpanel" aria-labelledby="heading-C">
+                                <div class="card-body">
+                                    <div class="row magnific-gallery add_top_30">
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="img/menu_items/large/2.jpg" title="Soft shell crab" data-effect="mfp-zoom-in">
+                                                        <img src="img/menu_items/2.jpg" data-src="img/menu_items/2.jpg" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>Soft shell crab</h3><em>$14</em>
+                                                </div>
+                                                <p>Chicken, Potato, Salad</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="img/menu_items/large/1.jpg" title="Soft shell crab" data-effect="mfp-zoom-in">
+                                                        <img src="img/menu_items/1.jpg" data-src="img/menu_items/1.jpg" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>Soft shell crab</h3><em>$14</em>
+                                                </div>
+                                                <p>Chicken, Potato, Salad</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="img/menu_items/large/1.jpg" title="Soft shell crab" data-effect="mfp-zoom-in">
+                                                        <img src="img/menu_items/1.jpg" data-src="img/menu_items/1.jpg" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>Soft shell crab</h3><em>$14</em>
+                                                </div>
+                                                <p>Chicken, Potato, Salad</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="menu_item">
+                                                <figure>
+                                                    <a href="img/menu_items/large/1.jpg" title="Soft shell crab" data-effect="mfp-zoom-in">
+                                                        <img src="img/menu_items/1.jpg" data-src="img/menu_items/1.jpg" class="lazy loaded" alt="" data-was-processed="true">
+                                                    </a>
+										        </figure>
+
+                                                <div class="menu_title">
+                                                    <h3>Soft shell crab</h3><em>$14</em>
+                                                </div>
+                                                <p>Chicken, Potato, Salad</p>
+                                            </div>
+                                        </div>
+
+                                    </div> 
+                                </div>
+                            </div>
+
+
+                        </div>
+                        
+
+
+                    </div>
+                             
+                    
+                </div>
+            
+                
+            </div>
+            <!--end row-->
+            
+            
+        </div>
+        <!--end container-->
+    
+	</section>
+    <!--end menu-tabs-->
+    
+    <div class="family-image-section">
+    
+        <!--begin image-overlay -->
+        <div class="image-overlay"></div>
+        <!--end image-overlay -->
+            
+        <!--begin container-->
+        <div class="container image-section-discover">
+
+            <!--begin row-->
+            <div class="row">
+            
+                <!--begin col-md-10-->
+                <div class="col-md-10 col-md-offset-1 text-center">
+                                    
+                    <p class="reservations-text white wow animated fadeInDown" data-wow-delay="1.25s">
+                       每一道料理都藏著我們的用心，每一份笑容都代表我們的真誠! 在蒸武館，我們想帶給您的不只是美味，更是超值的幸福感
+                    </p>
+
+                    <div class="ux-logo-link block image- wow animated fadeInUp" data-wow-delay="1.5s" title="" href="" style="padding: 15px; max-width: 100%!important; margin: 10px auto 20px;">
+                        <img decoding="async" src="https://robertospronto.com.my/wp-content/uploads/2024/01/Robertospronto-Home-img6.png" title="" alt="" class="ux-logo-image block" style="height:50px;" data-start="1500">
+                    </div>
+                    
+                    <button class="online-booking-button wow animated fadeIn" type="button" data-wow-delay="2.1s">
+                        <a href="reservations.html" class="table-booking" data-start="2100">預訂餐桌</a>
+                    </button>
+
+                </div>
+                <!--end col-md-10-->
+
+                
+            </div>
+            <!--end row-->
+
+            
+        </div>
+        <!--end container-->    
+        
+    </div>
+   
+    
+  
+        
+    <!--begin footer -->
+    <div class="footer">
+            
+        <!--begin container -->
+        <div class="container">
+        
+            <!--begin row -->
+            <div class="row footer-top">
+            
+                <!--begin col-md-3 -->
+                <div class="col-md-4 padding-bottom-50 footLeft">
+                
+                	<h4>關於我們 </h4>
+                    
+                    <p class="our-story">
+                        蒸武館茶室一個充滿傳統風味與人情味的溫暖角落! 從一杯濃郁的怡保咖啡到一份香氣撲鼻的烤麵包，我們致力於為每一位顧客提供懷舊而親切的美食體驗
+                    </p>
+                    
+                    <a href="about.html" class="btn btn-lg btn-yellow-x-small scrool">我們的故事</a>
+                    
+                </div>
+                <!--end col-md-3 -->
+                
+                <!--begin col-md-3 -->
+                <div class="col-md-4 padding-bottom-50 footMiddle">
+                    
+                    <img src="assets/steam-logo.png">
+        
+                    <div class="copyright">
+                        Copyright © 
+                        <script>document.write(new Date().getFullYear())
+                        </script>
+                        Steam Delicious Kopitiam 蒸武館<br>ALL rights reserved.
+                    </div>
+            
+                      
+                	
+                </div>
+                <!--end col-md-3 -->
+                
+                <!--begin col-md-3 -->
+                <div class="col-md-4 padding-bottom-50 footRight">
+                
+                	<h4 class="contact">聯絡詳情</h4>
+                    
+                    
+                    <p class="contact_info">
+                        <i class="fa fa-map-marker">
+
+                        </i> 
+                        39G, Jalan Lembah Maju 3/3, Taman Lembah Maju, 55100, Kuala Lumpur
+
+
+                    </p><br>
+                    
+                    <p class="contact_info">
+                        <i class="fa fa-phone">
+
+                        </i> 60 123456789
+                    </p><br>
+                
+                    <p class="contact_info">
+                        <i class="fa fa-envelope-square">
+
+                        </i> 
+                        <a href="mailto:contact@restaurant.com">
+                            info@SteamDelicious20.com
+                        </a>
+                    </p>
+                    
+                </div>
+                <!--end col-md-3 -->
+                
+            </div>
+            <!--end row -->
+            
+            
+            <!--begin row -->
+            <div class="row">
+                
+                <!--begin footer-bottom -->
+                <div class="footer-bottom">
+                   
+                    
+                    <!--begin col-md-2 -->
+                    <div class="col-md-12 text-center">
+                    
+                    	<a href="#menu-hero-section" class="scrool top-scroll"><i class="fa fa-angle-double-up"></i></a>
+                        
+                    </div>
+                    <!--end col-md-2 -->
+                    
+                    
+                        
+                </div>
+                <!--end footer-bottom -->
+                        
+            </div>
+            <!--end row -->
+            
+        </div>
+        <!--end container -->
+                
+    </div>
+    <!--end footer -->
+    
+
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.scrollTo-min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/instafeed.js"></script>
+    <script src="js/instagram.js"></script>
+     
+    <!-- RS5.0 Core JS Files -->
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+    
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    
+    <!-- begin custom script-->
+    <script src="js/custom.js"></script>
+    <script src="js/plugins.js"></script>
+    
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+
+
+    <!-- COMMON SCRIPTS -->
+    <script src="js/common_scripts.min.js"></script>
+    <script src="js/common_func.js"></script>
+    
+    
+</body>
+</html>
